@@ -32,7 +32,7 @@ system_or_fail('git', 'reset', '--soft', 'origin/gh-pages')
 system_or_fail('git', 'add', '-A', '.')
 system_or_fail('git', 'commit', '-m', 'Update github pages')
 system_or_fail('git', 'merge', '-s', 'ours', 'origin/source')
-system_or_fail('git', 'push', 'origin', 'HEAD:gh-pages')
+system_or_fail('git', 'push', 'origin', 'HEAD:master')
 
 puts "triggering a github pages deploy"
 
